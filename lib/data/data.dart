@@ -8,7 +8,7 @@ Color kGradient2 = Colors.orange;
 String imagePath = "images/shresth.jpeg";
 
 //String data to modify
-String name = "Shresth Kapoor";
+String name = "Shresth Kapoor ⚡";
 String username = "flutterroles";
 
 //Link to resume on Google Drive
@@ -23,15 +23,14 @@ I am an app developer with industry experience building android applications. I 
 ''';
 
 String aboutMeSummary = '''
-Aditya is a content creator and has over 5K subscribers on YouTube and a 700+ member community on Discord. 
-📺 YouTube Channel: watch.adityathakur.in
-🚀 Discord Community: discord.adityathakur.in
+I am an app developer with industry experience building android applications. I specialize in C++ and have professional experience working with Flutter. I also have experience working with C and Python. Currently pursuing my BTech in Computer Science Engineering at SRM ist.
+
 ''';
 
 String location = "Agra, India";
 String website = "shresthkapoor.in";
 String portfolio = "shresthkapoor";
-String email = "mail@shresthkapoor7";
+String email = "shresthkapoor7";
 
 List<Project> projectList = [
   Project(
