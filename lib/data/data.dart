@@ -2,26 +2,24 @@ import 'package:flutter/material.dart';
 import 'package:portfolio/models/project_model.dart';
 
 //Update with colors of your choice for dp background gradient
-Color kGradient1 = Colors.purple;
-Color kGradient2 = Colors.pinkAccent;
+Color kGradient1 = Colors.black;
+Color kGradient2 = Colors.orange;
 
-String imagePath = "images/aditya.jpeg";
+String imagePath = "images/shresth.jpeg";
 
 //String data to modify
-String name = "Your Name";
+String name = "Shresth Kapoor";
 String username = "flutterroles";
 
 //Link to resume on Google Drive
 String resumeLink =
-    "https://drive.google.com/file/d/1uZPqMWva6pZxzQxsR_ILLZ_FxJr24QeY/view?usp=sharing";
+    "https://drive.google.com/file/d/156flZhtg1pLE2_Yeb1yQdjqqYhsX3J5t/view?usp=sharing";
 
 //Contact Email
-String contactEmail = "mail@adityathakur.in";
+String contactEmail = "mail@shresthkapoor7@gmail.com";
 
 String aboutWorkExperience = '''
-Hello I am a freelancer
-
-He has previously been a speaker at the Flutter Global Summit'21, Flutter Vikings and events across colleges, universities (like VIT Chennai, Vellore, MIT-ADT), and clubs (IEEE APSIT, SFIT, GirlScript, GeeksforGeeks Student Chapter, Google CrowdSource, and more) here in India. 
+I am an app developer with industry experience building android applications. I specialize in C++ and have professional experience working with Flutter. I also have experience working with C and Python. Currently pursuing my BTech in Computer Science Engineering at SRM ist.
 ''';
 
 String aboutMeSummary = '''
@@ -30,10 +28,10 @@ Aditya is a content creator and has over 5K subscribers on YouTube and a 700+ me
 🚀 Discord Community: discord.adityathakur.in
 ''';
 
-String location = "Dharamshala, India";
-String website = "adityathakur.in";
-String portfolio = "adityathakurxd";
-String email = "mail@adityathakur.in";
+String location = "Agra, India";
+String website = "shresthkapoor.in";
+String portfolio = "shresthkapoor";
+String email = "mail@shresthkapoor7";
 
 List<Project> projectList = [
   Project(

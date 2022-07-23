@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-Color kGrey = const Color(0xFF334055);
-Color kPrimaryColor = const Color(0xFF334055);
+Color kGrey = Colors.orange;
+Color kPrimaryColor = Colors.black;
 Color kWhite = Colors.white;
 Color kBlack = Colors.black;
 
 TextStyle kTitleText = GoogleFonts.poppins(
-  color: Colors.black,
+  color: Colors.white,
   fontSize: 28.0,
   fontWeight: FontWeight.bold,
 );
@@ -19,9 +19,9 @@ TextStyle kSubTitleText = GoogleFonts.montserrat(
 );
 
 TextStyle kSectionTitleText = GoogleFonts.montserrat(
-  color: kPrimaryColor,
+  color: Colors.black,
   fontWeight: FontWeight.bold,
-  fontSize: 18.0,
+  fontSize: 24.0,
 );
 
 ElevatedButtonThemeData elevatedButtonThemeData = ElevatedButtonThemeData(
