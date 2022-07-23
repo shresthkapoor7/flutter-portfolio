@@ -43,7 +43,7 @@ class HomeScreen extends StatelessWidget {
                         //TODO:
                         radius: 60,
                         backgroundImage: NetworkImage(
-                            'https://twitter.com/ShresthKapoor7/photo'),
+                            'https://pbs.twimg.com/profile_images/1482620341512192002/02fkFpxQ_400x400.jpg'),
                       ),
                       const SizedBox(
                         height: 10,
