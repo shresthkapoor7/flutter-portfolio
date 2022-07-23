@@ -40,8 +40,10 @@ class HomeScreen extends StatelessWidget {
                         height: 2,
                       ),
                       CircleAvatar(
+                        //TODO:
                         radius: 60,
-                        backgroundImage: AssetImage(imagePath),
+                        backgroundImage: NetworkImage(
+                            'https://twitter.com/ShresthKapoor7/photo'),
                       ),
                       const SizedBox(
                         height: 10,
