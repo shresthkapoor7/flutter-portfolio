@@ -290,12 +290,12 @@ class HomeScreen extends StatelessWidget {
                                       aboutWorkExperience,
                                       style: TextStyle(color: Colors.white),
                                     ),
-                                    const Divider(),
-                                    Text("About Me", style: kSectionTitleText),
-                                    const SizedBox(
-                                      height: 10,
-                                    ),
-                                    Text(aboutMeSummary),
+                                    // const Divider(),
+                                    // Text("About Me", style: kSectionTitleText),
+                                    // const SizedBox(
+                                    //   height: 10,
+                                    // ),
+                                    // Text(aboutMeSummary),
                                   ]),
                                 ),
                               )
