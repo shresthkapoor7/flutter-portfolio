@@ -174,7 +174,7 @@ class HomeScreen extends StatelessWidget {
               height: 10,
             ),
             Padding(
-              padding: EdgeInsets.only(left: 70.0, right: 70, top: 20),
+              padding: const EdgeInsets.only(left: 30.0, right: 30, top: 20),
               child: Center(
                 child: SizedBox(
                   width: double.infinity,
@@ -203,7 +203,14 @@ class HomeScreen extends StatelessWidget {
                                     style: TextStyle(color: Colors.white),
                                   ),
                                   const Divider(),
-                                  Text("About Me", style: kSectionTitleText),
+                                  Text(
+                                    "About Me",
+                                    style: GoogleFonts.montserrat(
+                                      color: Colors.white,
+                                      fontWeight: FontWeight.bold,
+                                      fontSize: 24.0,
+                                    ),
+                                  ),
                                   const SizedBox(
                                     height: 10,
                                   ),
@@ -234,7 +241,6 @@ class HomeScreen extends StatelessWidget {
                                             const SizedBox(
                                               height: 10,
                                             ),
-
                                             Row(
                                               children: [
                                                 Text(
@@ -247,47 +253,25 @@ class HomeScreen extends StatelessWidget {
                                                   onTap: () async {
                                                     //Code to launch resume
                                                     final Uri _url = Uri.parse(
-                                                        'https://twitter.com/ShresthKapoor7');
+                                                        'https://www.google.com/maps/place/Agra,+Uttar+Pradesh/@27.1761049,77.8399274,11z/data=!3m1!4b1!4m5!3m4!1s0x39740d857c2f41d9:0x784aef38a9523b42!8m2!3d27.1766701!4d78.0080745');
                                                     await launchUrl(_url);
                                                   },
                                                   child: MouseRegion(
                                                     cursor: SystemMouseCursors
                                                         .click,
                                                     child: const Icon(
-                                                      Icons.map_rounded,
+                                                      FontAwesomeIcons.mapPin,
                                                       size: 16,
                                                     ),
                                                   ),
                                                 ),
                                               ],
                                             ),
-                                            // const SizedBox(
-                                            //   height: 10,
-                                            // ),
-                                            // Text(
-                                            //   "Website",
-                                            //   style: kSubTitleText,
-                                            // ),
-                                            // const SizedBox(
-                                            //   height: 10,
-                                            // ),
-                                            // Row(
-                                            //   children: [
-                                            //     Text(website),
-                                            //     const SizedBox(
-                                            //       width: 5,
-                                            //     ),
-                                            //     const Icon(
-                                            //       Icons.launch,
-                                            //       size: 16,
-                                            //     )
-                                            //   ],
-                                            // ),
                                             const SizedBox(
                                               height: 10,
                                             ),
                                             Text(
-                                              "Portfolio",
+                                              "Website",
                                               style: kSubTitleText,
                                             ),
                                             const SizedBox(
@@ -302,14 +286,14 @@ class HomeScreen extends StatelessWidget {
                                                 GestureDetector(
                                                   onTap: () async {
                                                     final Uri _url = Uri.parse(
-                                                        'https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+                                                        'https://linktr.ee/shresthkapoor');
                                                     await launchUrl(_url);
                                                   },
                                                   child: MouseRegion(
                                                     cursor: SystemMouseCursors
                                                         .click,
                                                     child: const Icon(
-                                                      Icons.launch,
+                                                      FontAwesomeIcons.tree,
                                                       size: 16,
                                                     ),
                                                   ),
@@ -333,7 +317,7 @@ class HomeScreen extends StatelessWidget {
                                                   width: 5,
                                                 ),
                                                 const Icon(
-                                                  Icons.launch,
+                                                  Icons.mail,
                                                   size: 16,
                                                 )
                                               ],
@@ -416,16 +400,28 @@ class HomeScreen extends StatelessWidget {
                                           ),
                                           Row(
                                             children: [
-                                              const Icon(
-                                                Icons.circle,
-                                                size: 16,
+                                              Text(
+                                                location,
                                               ),
                                               const SizedBox(
                                                 width: 5,
                                               ),
-                                              Text(
-                                                location,
-                                              )
+                                              GestureDetector(
+                                                onTap: () async {
+                                                  //Code to launch resume
+                                                  final Uri _url = Uri.parse(
+                                                      'https://www.google.com/maps/place/Agra,+Uttar+Pradesh/@27.1761049,77.8399274,11z/data=!3m1!4b1!4m5!3m4!1s0x39740d857c2f41d9:0x784aef38a9523b42!8m2!3d27.1766701!4d78.0080745');
+                                                  await launchUrl(_url);
+                                                },
+                                                child: MouseRegion(
+                                                  cursor:
+                                                      SystemMouseCursors.click,
+                                                  child: const Icon(
+                                                    FontAwesomeIcons.mapPin,
+                                                    size: 16,
+                                                  ),
+                                                ),
+                                              ),
                                             ],
                                           ),
                                           const SizedBox(
@@ -436,29 +432,7 @@ class HomeScreen extends StatelessWidget {
                                             style: kSubTitleText,
                                           ),
                                           const SizedBox(
-                                            height: 10,
-                                          ),
-                                          Row(
-                                            children: [
-                                              Text(website),
-                                              const SizedBox(
-                                                width: 5,
-                                              ),
-                                              const Icon(
-                                                Icons.launch,
-                                                size: 16,
-                                              )
-                                            ],
-                                          ),
-                                          const SizedBox(
-                                            height: 10,
-                                          ),
-                                          Text(
-                                            "Portfolio",
-                                            style: kSubTitleText,
-                                          ),
-                                          const SizedBox(
-                                            height: 10,
+                                            height: 5,
                                           ),
                                           Row(
                                             children: [
@@ -466,9 +440,20 @@ class HomeScreen extends StatelessWidget {
                                               const SizedBox(
                                                 width: 5,
                                               ),
-                                              const Icon(
-                                                Icons.launch,
-                                                size: 16,
+                                              GestureDetector(
+                                                onTap: () async {
+                                                  final Uri _url = Uri.parse(
+                                                      'https://linktr.ee/shresthkapoor');
+                                                  await launchUrl(_url);
+                                                },
+                                                child: MouseRegion(
+                                                  cursor:
+                                                      SystemMouseCursors.click,
+                                                  child: const Icon(
+                                                    FontAwesomeIcons.tree,
+                                                    size: 16,
+                                                  ),
+                                                ),
                                               )
                                             ],
                                           ),
@@ -480,7 +465,7 @@ class HomeScreen extends StatelessWidget {
                                             style: kSubTitleText,
                                           ),
                                           const SizedBox(
-                                            height: 10,
+                                            height: 5,
                                           ),
                                           Row(
                                             children: [
@@ -489,7 +474,7 @@ class HomeScreen extends StatelessWidget {
                                                 width: 5,
                                               ),
                                               const Icon(
-                                                Icons.launch,
+                                                Icons.mail,
                                                 size: 16,
                                               )
                                             ],
@@ -507,34 +492,37 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
             ),
-            Container(
-              color: Colors.black,
-              child: Center(
-                child: SizedBox(
-                  width: MediaQuery.of(context).size.width * 0.9,
-                  child: screenSize.width > 1000
-                      ? GridView.builder(
-                          shrinkWrap: true,
-                          gridDelegate:
-                              const SliverGridDelegateWithFixedCrossAxisCount(
-                                  crossAxisCount: 2, childAspectRatio: 3),
-                          itemCount: projectList.length,
-                          itemBuilder: (BuildContext context, int index) {
-                            return ProjectWidget(
-                              projectData: projectList[index],
-                            );
-                          })
-                      : GridView.builder(
-                          shrinkWrap: true,
-                          gridDelegate:
-                              const SliverGridDelegateWithFixedCrossAxisCount(
-                                  crossAxisCount: 1, childAspectRatio: 2),
-                          itemCount: projectList.length,
-                          itemBuilder: (BuildContext context, int index) {
-                            return ProjectWidget(
-                              projectData: projectList[index],
-                            );
-                          }),
+            Padding(
+              padding: const EdgeInsets.only(left: 30.0, right: 30, top: 20),
+              child: Container(
+                color: Colors.black,
+                child: Center(
+                  child: SizedBox(
+                    width: MediaQuery.of(context).size.width * 1,
+                    child: screenSize.width > 1000
+                        ? GridView.builder(
+                            shrinkWrap: true,
+                            gridDelegate:
+                                const SliverGridDelegateWithFixedCrossAxisCount(
+                                    crossAxisCount: 2, childAspectRatio: 3),
+                            itemCount: projectList.length,
+                            itemBuilder: (BuildContext context, int index) {
+                              return ProjectWidget(
+                                projectData: projectList[index],
+                              );
+                            })
+                        : GridView.builder(
+                            shrinkWrap: true,
+                            gridDelegate:
+                                const SliverGridDelegateWithFixedCrossAxisCount(
+                                    crossAxisCount: 1, childAspectRatio: 3),
+                            itemCount: projectList.length,
+                            itemBuilder: (BuildContext context, int index) {
+                              return ProjectWidget(
+                                projectData: projectList[index],
+                              );
+                            }),
+                  ),
                 ),
               ),
             ),

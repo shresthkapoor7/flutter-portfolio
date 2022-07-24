@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "portfolio-shresthkapoor7"
-  }
+    "default": "shresthkapoor7-5b90e",
+    "staging": "shresthkapoor7-5b90e"
+  },
+  "targets": {},
+  "etags": {}
 }

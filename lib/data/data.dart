@@ -34,22 +34,18 @@ String email = "shresthkapoor7";
 
 List<Project> projectList = [
   Project(
-      name: "Shades",
+      name: "Portfoio",
       description:
-          "Winner IEEE Mandi 'Go Online' Challenge at Electrothon, NIT Hamirpur.",
-      link: "https://github.com/adityathakurxd/shades"),
+          "A responsive portfolio build with flutter 💙 that works for all screen sizes and is hosted on firebase 🔥",
+      link: "https://github.com/shresthkapoor7/flutter-portfolio"),
   Project(
-      name: "Fiasco",
+      name: "DigiTrack",
       description:
-          "Fiasco is one stop solution to help you manage Family expenses in one place!",
-      link: "https://github.com/adityathakurxd/fiasco"),
+          "A digital diary for your phone which stores your data locally to address privacy concerns. Created using Flutter",
+      link: "https://github.com/shresthkapoor7/digitrack"),
   Project(
-      name: "Fiasco",
+      name: "JPEG",
       description:
-          "Fiasco is one stop solution to help you manage Family expenses in one place!",
-      link: "https://github.com/adityathakurxd/fiasco"),
-  Project(
-      name: "Flutter Portfolio",
-      description: "A template for Portfolio",
-      link: "https://github.com/adityathakurxd/flutter-portfolio")
+          "A cross-platform instagram clone, build with a simple UI to connect with friends",
+      link: "https://github.com/shresthkapoor7/jpeg"),
 ];
