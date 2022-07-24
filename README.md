@@ -1,5 +1,4 @@
 # Flutter Portfolio
 
-A portfolio made using Flutter for web.
-- [Link](https://portfolio-shresthkapoor7.web.app/#/)
+[A portfolio made using Flutter for web.](https://shresthkapoor7-5b90e.web.app/#/)
 
