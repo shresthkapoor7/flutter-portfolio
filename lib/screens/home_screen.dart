@@ -1,12 +1,16 @@
-// ignore_for_file: prefer_const_constructors
+// ignore_for_file: prefer_const_constructors, sort_child_properties_last
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/constants/constants.dart';
 import 'package:portfolio/data/data.dart';
+import 'package:portfolio/screens/skills.dart';
 import 'package:portfolio/screens/widgets/project_widget.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:flutter_speed_dial/flutter_speed_dial.dart';
+import 'package:flutter/services.dart';
+import 'package:share_plus/share_plus.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -15,6 +19,36 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     var screenSize = MediaQuery.of(context).size;
     return Scaffold(
+      floatingActionButton: SpeedDial(
+        overlayColor: Colors.black,
+        backgroundColor: Colors.orange,
+        //animatedIcon: AnimatedIcons.menu_arrow,
+        activeIcon: Icons.arrow_back,
+        icon: Icons.share,
+        spacing: 10,
+        // ignore: prefer_const_literals_to_create_immutables
+        children: [
+          SpeedDialChild(
+            child: Icon(Icons.copy),
+            onTap: () {
+              Clipboard.setData(ClipboardData(
+                  text: "https://shresthkapoor7-5b90e.web.app/#/"));
+            },
+          ),
+          // SpeedDialChild(
+          //     child: Icon(FontAwesomeIcons.linkedin),
+          //     onTap: () {
+          //       Share.share('https://shresthkapoor7-5b90e.web.app/#/');
+          //     }),
+          // SpeedDialChild(
+          //   child: Icon(FontAwesomeIcons.instagram),
+          // ),
+          // SpeedDialChild(
+          //   child: Icon(FontAwesomeIcons.facebook),
+          // ),
+        ],
+      ),
+      //floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
       backgroundColor: Colors.black,
       body: SingleChildScrollView(
         child: Column(
@@ -524,6 +558,19 @@ class HomeScreen extends StatelessWidget {
                             }),
                   ),
                 ),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            ),
+            Center(
+              child: Text(
+                'It works on my machine',
+                style: TextStyle(
+                    fontSize: 10,
+                    fontWeight: FontWeight.w200,
+                    fontStyle: FontStyle.italic,
+                    color: Colors.grey),
               ),
             ),
             SizedBox(

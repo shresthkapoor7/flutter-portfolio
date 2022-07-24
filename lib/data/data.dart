@@ -34,17 +34,20 @@ String email = "shresthkapoor7";
 
 List<Project> projectList = [
   Project(
-      name: "Portfoio",
+      date: "Jul 2022 - Present",
+      name: "Portfoio ",
       description:
-          "A responsive portfolio build with flutter 💙 that works for all screen sizes and is hosted on firebase 🔥",
+          "A responsive portfolio build with flutter 💙 that works for all screen sizes (almost) and is hosted on firebase 🔥",
       link: "https://github.com/shresthkapoor7/flutter-portfolio"),
   Project(
-      name: "DigiTrack",
+      date: "Aug 2021 - Oct 2021",
+      name: "DigiTrack ",
       description:
           "A digital diary for your phone which stores your data locally to address privacy concerns. Created using Flutter",
       link: "https://github.com/shresthkapoor7/digitrack"),
   Project(
-      name: "JPEG",
+      date: "Jul 2022 - Present",
+      name: "JPEG ",
       description:
           "A cross-platform instagram clone, build with a simple UI to connect with friends",
       link: "https://github.com/shresthkapoor7/jpeg"),

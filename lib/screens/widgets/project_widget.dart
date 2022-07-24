@@ -25,10 +25,17 @@ class ProjectWidget extends StatelessWidget {
                       padding: const EdgeInsets.all(10.0),
                       child: Row(
                         children: [
-                          Icon(
-                            Icons.build,
-                            color: kGrey,
-                            size: 18,
+                          CircleAvatar(
+                            radius: 10,
+                            backgroundColor: Colors.black,
+                            child: CircleAvatar(
+                              radius: 7,
+                              backgroundColor: Colors.white,
+                              child: CircleAvatar(
+                                radius: 3,
+                                backgroundColor: Colors.orange,
+                              ),
+                            ),
                           ),
                           const SizedBox(
                             width: 10,
@@ -37,6 +44,16 @@ class ProjectWidget extends StatelessWidget {
                             projectData.name,
                             style: kSectionTitleText,
                           ),
+                          Align(
+                            alignment: Alignment.bottomRight,
+                            child: Text(
+                              projectData.date,
+                              style: kSectionTitleText.copyWith(
+                                  fontWeight: FontWeight.normal,
+                                  fontSize: 15,
+                                  color: Colors.grey),
+                            ),
+                          )
                         ],
                       ),
                     ),
