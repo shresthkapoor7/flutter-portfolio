@@ -73,8 +73,40 @@ class HomeScreen extends StatelessWidget {
                 ),
                 Column(
                   children: [
+                    Padding(
+                      padding: const EdgeInsets.only(right: 15.0, top: 10),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          TextButton(
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => const HomeScreen()),
+                                );
+                              },
+                              child: Text(
+                                'Home',
+                                style: TextStyle(
+                                    fontSize: 10,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold),
+                              )),
+                          TextButton(
+                              onPressed: () {},
+                              child: Text(
+                                'Experience',
+                                style: TextStyle(
+                                    fontSize: 10,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold),
+                              )),
+                        ],
+                      ),
+                    ),
                     const SizedBox(
-                      height: 120,
+                      height: 80,
                     ),
                     CircleAvatar(
                       radius: 85,
