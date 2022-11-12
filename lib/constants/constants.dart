@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 Color kGrey = Colors.orange;
-Color kPrimaryColor = Colors.black;
+Color kPrimaryColor = Colors.grey;
 Color kWhite = Colors.white;
-Color kBlack = Colors.black;
+Color kBlack = Colors.grey;
 
 TextStyle kTitleText = GoogleFonts.poppins(
-  color: Colors.white,
+  color: Colors.black,
   fontSize: 28.0,
   fontWeight: FontWeight.bold,
 );

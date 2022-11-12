@@ -4,17 +4,22 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio/constants/constants.dart';
 import 'package:portfolio/data/data.dart';
-import 'package:portfolio/screens/skills.dart';
 import 'package:portfolio/screens/widgets/project_widget.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:flutter_speed_dial/flutter_speed_dial.dart';
 import 'package:flutter/services.dart';
-import 'package:share_plus/share_plus.dart';
 
-class HomeScreen extends StatelessWidget {
+import 'homePage.dart';
+
+class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     var screenSize = MediaQuery.of(context).size;
@@ -35,21 +40,10 @@ class HomeScreen extends StatelessWidget {
                   text: "https://shresthkapoor7-5b90e.web.app/#/"));
             },
           ),
-          // SpeedDialChild(
-          //     child: Icon(FontAwesomeIcons.linkedin),
-          //     onTap: () {
-          //       Share.share('https://shresthkapoor7-5b90e.web.app/#/');
-          //     }),
-          // SpeedDialChild(
-          //   child: Icon(FontAwesomeIcons.instagram),
-          // ),
-          // SpeedDialChild(
-          //   child: Icon(FontAwesomeIcons.facebook),
-          // ),
         ],
       ),
       //floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.blueGrey.shade900,
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -57,39 +51,25 @@ class HomeScreen extends StatelessWidget {
             Stack(
               // ignore: sort_child_properties_last
               children: [
-                Container(
-                  width: MediaQuery.of(context).size.width,
-                  height: 200,
-                  decoration: BoxDecoration(
-                    gradient: LinearGradient(
-                      begin: Alignment.topRight,
-                      end: Alignment.bottomLeft,
-                      colors: [
-                        kGradient1,
-                        kGradient2,
-                      ],
-                    ),
-                  ),
-                ),
                 Column(
                   children: [
                     Padding(
-                      padding: const EdgeInsets.only(right: 15.0, top: 10),
+                      padding: const EdgeInsets.only(left: 25, top: 25),
                       child: Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           TextButton(
                               onPressed: () {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => const HomeScreen()),
+                                      builder: (context) => HomePage()),
                                 );
                               },
                               child: Text(
                                 'Home',
                                 style: TextStyle(
-                                    fontSize: 10,
+                                    fontSize: 15,
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold),
                               )),
@@ -98,7 +78,37 @@ class HomeScreen extends StatelessWidget {
                               child: Text(
                                 'Experience',
                                 style: TextStyle(
-                                    fontSize: 10,
+                                    fontSize: 15,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold),
+                              )),
+                          TextButton(
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => HomeScreen()),
+                                );
+                              },
+                              child: Text(
+                                'Projects',
+                                style: TextStyle(
+                                    fontSize: 15,
+                                    color: Colors.white,
+                                    fontWeight: FontWeight.bold),
+                              )),
+                          TextButton(
+                              onPressed: () {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => HomeScreen()),
+                                );
+                              },
+                              child: Text(
+                                'Achievements',
+                                style: TextStyle(
+                                    fontSize: 15,
                                     color: Colors.white,
                                     fontWeight: FontWeight.bold),
                               )),
@@ -106,15 +116,13 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                     const SizedBox(
-                      height: 80,
+                      height: 40,
                     ),
                     CircleAvatar(
-                      radius: 85,
-                      backgroundColor: Colors.black,
+                      radius: 82,
+                      backgroundColor: Colors.white,
                       child: CircleAvatar(
-                        //TODO:
                         radius: 80,
-
                         backgroundImage: NetworkImage(
                             'https://pbs.twimg.com/profile_images/1482620341512192002/02fkFpxQ_400x400.jpg'),
                       ),

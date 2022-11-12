@@ -8,7 +8,7 @@ Color kGradient2 = Colors.orange;
 String imagePath = "images/shresth.jpeg";
 
 //String data to modify
-String name = "Shresth Kapoor ⚡";
+String name = "Shresth Kapoor";
 String username = "flutterroles";
 
 //Link to resume on Google Drive
@@ -23,8 +23,7 @@ I am an app developer with industry experience building android applications. I 
 ''';
 
 String aboutMeSummary = '''
-I am an app developer with industry experience building android applications. I specialize in C++ and have professional experience working with Flutter. I also have experience working with C and Python. Currently pursuing my BTech in Computer Science Engineering at SRM ist.
-
+Final year Computer Science Engineering student at SRM institute of Science and Technology. \nAn app developer with experience in creating cross platform apps.  
 ''';
 
 String location = "Agra, India";

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:portfolio/constants/constants.dart';
-import 'package:portfolio/screens/home_screen.dart';
-import 'package:flutter_splash_screen/flutter_splash_screen.dart';
+import 'package:portfolio/screens/homePage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,11 +14,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Work in progress..',
       theme: ThemeData(
           primarySwatch: Colors.blue,
           elevatedButtonTheme: elevatedButtonThemeData),
-      home: const HomeScreen(),
+      home: const HomePage(),
     );
   }
 }
