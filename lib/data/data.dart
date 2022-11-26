@@ -13,7 +13,7 @@ String username = "flutterroles";
 
 //Link to resume on Google Drive
 String resumeLink =
-    "https://drive.google.com/file/d/1YAaQKoYJhssoVDzVeyWFvYmXt7lTioyW/view?usp=sharing";
+    "https://drive.google.com/file/d/1b_S115ajb4TL113RvPSsmXmxnCe7G3o-/view?usp=sharing";
 
 //Contact Email
 String contactEmail = "mail@shresthkapoor7@gmail.com";

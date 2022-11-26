@@ -248,7 +248,8 @@ class MyWidget extends StatelessWidget {
     Tab(text: 'Eductaion'),
     Tab(
       text: 'Achievements',
-    )
+    ),
+    Tab(text: 'Blogs',),
   ]);
   @override
   Widget build(BuildContext context) {
@@ -258,7 +259,7 @@ class MyWidget extends StatelessWidget {
           height: 800,
           width: 820,
           child: DefaultTabController(
-            length: 4,
+            length: 5,
             child: Scaffold(
               appBar: upperTab,
               backgroundColor: Colors.black,
@@ -494,6 +495,7 @@ class MyWidget extends StatelessWidget {
                       ],
                     ),
                   ),
+                  Text('Hey')
                 ],
               ),
             ),
